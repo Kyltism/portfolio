@@ -1,0 +1,2307 @@
+* {
+    margin: 0;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* head menu navigation */
+
+a {
+    text-decoration: none;
+}
+
+.background_header,
+.background_header_adaptive {
+    z-index: -100;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 65.96vw;
+}
+
+.logo {
+    position: absolute;
+    z-index: -3;
+    display: flex;
+    width: 100vw;
+    height: 5.12vw;
+    justify-content: center;
+}
+
+.head {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    margin-top: 2.56vw;
+    grid-gap: 25%;
+}
+
+.menu_nav {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 5%;
+}
+
+.topmenu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.topmenu a {
+    text-decoration: none;
+    display: block;
+    transition: 0.4s ease-in-out;
+}
+
+.topmenu > li {
+    position: relative;
+}
+
+.topmenu > li:hover .submenu,
+.topmenu > li:hover .submenu_cruise,
+.topmenu > li:hover .submenu_bort {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.href_nav {
+    font-family: "Alumni Sans";
+    font-size: 1.46vw;
+    font-weight: 400;
+    line-height: 1.76vw;
+    letter-spacing: 0em;
+    text-decoration: none;
+    color: #000;
+}
+
+.href_nav:hover {
+    text-decoration: underline;
+}
+
+/* second menu */
+ul {
+    list-style: none;
+}
+
+.submenu,
+.submenu_cruise,
+.submenu_bort {
+    position: absolute;
+    width: 130%;
+    background: linear-gradient(#fdd7a400, #fee7b5);
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 0.4s ease-in-out;
+    padding: 0;
+    height: 11.71vw;
+}
+
+.submenu_cruise {
+    width: 400%;
+    height: 8.93vw;
+}
+
+.submenu li button,
+.submenu_cruise li button,
+.submenu_bort li button {
+    font-family: "Alumni Sans";
+    font-size: 1.02vw;
+    font-weight: 400;
+    line-height: 1.24vw;
+    letter-spacing: 0em;
+    padding-left: 20px;
+    border: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+}
+
+.submenu li button a {
+    color: #000;
+}
+
+.submenu li button:hover,
+.submenu_cruise li button:hover,
+.submenu_bort li button:hover {
+    background-color: #f06500;
+}
+
+.submenu li .tarif:hover,
+.submenu_cruise li .tarif:hover,
+.submenu_bort li .tarif:hover {
+    background-color: #f06500;
+    border-bottom-left-radius: 60px;
+}
+
+.submenu .open {
+    display: none;
+}
+
+.submenu :hover .close {
+    display: none;
+}
+
+.submenu :hover .open {
+    display: flex;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_text a {
+    color: #000;
+}
+
+.submenu_bort {
+    width: 350%;
+    height: 11.79vw;
+}
+
+.second_text.one {
+    height: 2.08vw;
+}
+
+.second_text {
+    position: absolute;
+    width: 130%;
+    background: #ffffff;
+    border-bottom-right-radius: 35px;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 0.4s ease-in-out;
+    padding: 0;
+    height: 5.78vw;
+    margin-left: 100%;
+    margin-top: -18%;
+}
+
+.submenu > li:hover .second_text {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.submenu.flot {
+    width: 338%;
+    height: 4.71vw;
+}
+
+.second_text.five,
+.second_text.six {
+    width: 84%;
+    height: 3.8vw;
+}
+
+.submenu_cruise.premium {
+    width: 200%;
+    height: 4.93vw;
+}
+
+.second_text.more_six {
+    width: 96%;
+    height: 4.2vw;
+}
+
+ul.submenu.flot li ul.second_text {
+    height: 8.78vw;
+}
+
+.search_contacts_grid {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 15%;
+    margin-right: 6%;
+    justify-content: end;
+}
+
+.search_input {
+    margin: auto;
+    background: url(/img/iconSearch.svg);
+    border: 1px solid #000;
+    outline: none;
+    background-position: 4px center;
+    padding-left: 31px;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    border-radius: 35px;
+    color: #000;
+    font-family: "Alumni Sans";
+    font-size: 1.17vw;
+    font-weight: 400;
+    line-height: 1.39vw;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#searchForm {
+    width: 12vw;
+    height: 2.49vw;
+}
+
+.tel_nav {
+    font-family: "Alumni Sans";
+    font-size: 1.46vw;
+    font-weight: 400;
+    line-height: 1.76vw;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration-line: underline;
+}
+
+.time {
+    font-family: Alumni Sans;
+    font-size: 0.88vw;
+    font-weight: 400;
+    line-height: 1.02vw;
+    letter-spacing: 0em;
+}
+
+.about {
+    font-family: "Alumni Sans";
+    font-size: 1.32vw;
+    font-weight: 400;
+    line-height: 1.61vw;
+    letter-spacing: 0.01em;
+    margin-left: 2.35vw;
+    color: #ffffff;
+    margin-top: 3.46vw;
+    width: 36.76vw;
+}
+
+.world {
+    font-family: Impact;
+    font-size: 8.05vw;
+    font-weight: 400;
+    line-height: 8.42vw;
+    letter-spacing: 0em;
+    margin-left: 2.35vw;
+    color: #ffffff;
+    margin-top: 3.82vw;
+}
+
+.main_butt {
+    margin-left: 2.35vw;
+    margin-top: 3.82vw;
+}
+
+.vawe_main {
+    position: absolute;
+    z-index: -5;
+    margin-top: 6.18vw;
+    width: 106.91vw;
+    height: 57.19vw;
+    top: 0;
+}
+
+.send_forms,
+.application {
+    color: #ffffff;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background: none;
+    font-family: "Alumni Sans";
+    cursor: pointer;
+    letter-spacing: 0em;
+    font-weight: 600;
+}
+
+.application {
+    font-size: 2.71vw;
+    line-height: 3.22vw;
+    border: 2px solid #ffffff;
+    display: flex;
+    padding: 10px 50px;
+}
+
+.application:hover,
+.button-footer:hover {
+    border: 2px solid #f06500;
+}
+
+.application_window,
+.application_window_end {
+    display: none;
+    backdrop-filter: blur(5px);
+    width: 100vw;
+    height: 112vh;
+    z-index: 100;
+    position: absolute;
+}
+
+.application_window {
+    top: 0;
+}
+
+.application_window_end {
+    margin-top: -57.29vw;
+    height: 130vh;
+}
+
+.application_window.open,
+.application_window_end.open {
+    display: block;
+}
+
+div.application_window_end div.form {
+    margin-left: 0;
+}
+
+.form_flex {
+    display: flex;
+    justify-content: center;
+}
+
+div.application_window div.form {
+    position: fixed;
+    margin: 0px 0px 0px 0px;
+    margin-top: 12vw;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.send_forms:hover {
+    border: 1px solid #f06500;
+}
+
+.cont_img_article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 11.49vw;
+    margin-left: 30px;
+    gap: 5px;
+    position: absolute;
+}
+
+.inst_logo,
+.telegram_logo,
+.youTube_logo {
+    width: 2vw;
+    height: 2vw;
+}
+
+.vawes {
+    width: 100%;
+    position: absolute;
+    z-index: -5;
+    margin-top: -5.8vw;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+    height: 33.89vw;
+}
+
+td {
+    border: 1px solid #000;
+}
+
+td.border_none {
+    border-top: 0px solid #ffffff;
+    border-left: 0px solid #ffffff;
+    border-right: 0px solid #ffffff;
+}
+
+td.left {
+    border-right: 0px solid #ffffff;
+}
+
+td.border_none_last {
+    border-bottom: 0px solid #ffffff;
+    border-left: 0px solid #ffffff;
+    border-right: 0px solid #ffffff;
+}
+
+.logo_position {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.65vw;
+    margin-bottom: 4.41vw;
+}
+
+.empty {
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.table_text,
+.table_text_last {
+    font-family: "Alumni Sans";
+    font-size: 1.46vw;
+    font-weight: 400;
+    line-height: 1.76vw;
+    letter-spacing: 0.01em;
+}
+
+.big_table_text {
+    font-family: "Alumni Sans";
+    font-size: 1.83vw;
+    font-weight: 600;
+    line-height: 2.2vw;
+    letter-spacing: 0.01em;
+    width: 21.01vw;
+}
+
+.table_text_last {
+    height: 10.18vw;
+}
+
+.table_text_why {
+    font-family: "Alumni Sans";
+    font-size: 1.83vw;
+    font-weight: 300;
+    line-height: 2.2vw;
+    letter-spacing: 0.01em;
+}
+
+h1 {
+    font-family: Alumni Sans;
+    font-size: 4.76vw;
+    font-weight: 600;
+    line-height: 5.71vw;
+    letter-spacing: 0em;
+    width: 43.63vw;
+}
+
+p.big_table_text {
+    margin-top: 32.87vw;
+    margin-left: 62.95vw;
+}
+
+.table_wrapper {
+    border: 1px solid #000;
+    height: 33.89vw;
+    width: 68vw;
+    margin-left: 16.25vw;
+    margin-right: 19.4vw;
+    border-top-left-radius: 5.21vw;
+    border-bottom-left-radius: 5.21vw;
+    border-right: 0px solid #ffffff;
+}
+
+.booking_stages {
+    font-family: "Alumni Sans";
+    font-size: 4.39vw;
+    font-weight: 500;
+    line-height: 5.27vw;
+    letter-spacing: 0.01em;
+    margin-left: 11.64vw;
+    margin-top: 11.57vw;
+}
+
+.stages {
+    grid-gap: 9.15vw;
+    display: flex;
+}
+
+.flex_stage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.number {
+    font-family: "Alumni Sans";
+    font-size: 4.03vw;
+    font-weight: 600;
+    line-height: 4.83vw;
+    letter-spacing: 0.01em;
+    margin-left: 9.08vw;
+}
+
+.explanation {
+    font-family: "Alumni Sans";
+    font-size: 1.83vw;
+    font-weight: 600;
+    line-height: 2.2vw;
+    letter-spacing: 0.01em;
+}
+
+.expl_text {
+    font-family: "Alumni Sans";
+    font-size: 1.46vw;
+    font-weight: 400;
+    line-height: 1.76vw;
+    letter-spacing: 0.01em;
+}
+
+.wave_mid {
+    height: 88vw;
+    width: 100vw;
+    margin-top: -102.5vw;
+    position: absolute;
+    z-index: -5;
+}
+
+.actions {
+    font-family: "Alumni Sans";
+    font-size: 4.39vw;
+    font-weight: 500;
+    line-height: 5.27vw;
+    letter-spacing: 0.01em;
+    margin-top: 12.96vw;
+    margin-left: 11.79vw;
+}
+
+.action_photo {
+    width: 19.99vw;
+    height: 14.86vw;
+    border-radius: 25px;
+    position: absolute;
+    z-index: -5;
+}
+
+.text_photo {
+    font-family: "Alumni Sans";
+    font-size: 1.61vw;
+    font-weight: 400;
+    line-height: 1.9vw;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    width: 12.69vw;
+}
+
+.section_shell {
+    position: absolute;
+    margin-top: 10.4vw;
+    margin-left: 1.39vw;
+}
+
+.time_action {
+    font-family: "Alumni Sans";
+    font-size: 1.46vw;
+    font-weight: 600;
+    line-height: 1.76vw;
+    letter-spacing: 0.01em;
+    color: #f06500;
+    margin-top: 1.7vw;
+}
+
+.price_actions {
+    font-family: "Alumni Sans";
+    font-size: 1.83vw;
+    font-weight: 400;
+    line-height: 2.2vw;
+    letter-spacing: 0.01em;
+    color: #f06500;
+}
+
+.booking {
+    font-family: "Alumni Sans";
+    font-size: 1.17vw;
+    font-weight: 400;
+    line-height: 1.39vw;
+    letter-spacing: 0.01em;
+    width: 15.3vw;
+    padding-bottom: 1.1vw;
+}
+
+div .section_shell a {
+    font-family: Alumni Sans;
+    font-size: 1.46vw;
+    font-weight: 400;
+    line-height: 1.76vw;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: #000;
+    margin-left: 10.52vw;
+}
+
+.shell {
+    margin-left: 5.78vw;
+    box-shadow: 0 0 20px #555;
+    position: absolute;
+    margin-top: 6.44vw;
+    width: 19.99vw;
+    height: 26.35vw;
+    border-radius: 25px;
+    transition: 0.4s ease-in-out;
+}
+
+.price {
+    font-family: "Alumni Sans";
+    font-size: 1.83vw;
+    font-weight: 400;
+    line-height: 2.2vw;
+    letter-spacing: 0.01em;
+    color: #000;
+    margin-top: 1.7vw;
+}
+
+.shell.second {
+    margin-left: 29vw;
+    height: 24.6vw;
+}
+
+.shell.third {
+    margin-left: 52vw;
+    height: 24.6vw;
+}
+
+.shell.fourth {
+    margin-left: 75vw;
+}
+
+.section_shell a:hover {
+    color: #f06500;
+}
+
+.shell:hover {
+    transform: scale(1.1);
+}
+
+.actions_main_section button {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.button_action,
+.button_action_close {
+    display: flex;
+    justify-content: center;
+    margin-top: 36.31vw;
+}
+
+.button_action_close {
+    visibility: hidden;
+    display: none;
+}
+
+.actions_section.more {
+    transition: max-height 2s;
+}
+
+.button_action_close.to_close {
+    visibility: visible;
+    display: flex;
+}
+
+.actions_section.more.open {
+    transform: translateY(1000px);
+    transition: max-height 2s;
+}
+
+.button_action.open {
+    visibility: hidden;
+}
+
+.button_action button,
+.button_action_close button,
+.close_questions button {
+    font-family: "Alumni Sans";
+    font-size: 1.83vw;
+    font-weight: 400;
+    line-height: 2.2vw;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+}
+
+.rotate_arrow,
+.rotate_arrow_close,
+.arrow_more {
+    font-family: "Alumni Sans";
+    font-size: 2.83vw;
+    font-weight: 400;
+    line-height: 1.2vw;
+    letter-spacing: 0.01em;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.rotate_arrow_close {
+    transform: rotate(270deg);
+    margin-left: 1vw;
+}
+
+.rotate_arrow:hover,
+.button_action:hover .rotate_arrow,
+.rotate_arrow.color,
+.rotate_arrow_close:hover,
+.arrow_more:hover {
+    color: #f06500;
+}
+
+.actions_section.more {
+    visibility: hidden;
+    display: none;
+}
+
+.actions_section.more.open-menu {
+    visibility: visible;
+    display: flex;
+    margin-top: -7.99vw;
+}
+
+.ship {
+    position: absolute;
+    z-index: -10;
+    width: 100vw;
+    height: 67.55vw;
+}
+
+.form {
+    border-radius: 25px;
+    background-image: url(./img/form-back.png);
+    background-position-x: -9.52vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 51.54vw;
+    height: 38.07vw;
+    margin-left: 24.23vw;
+    margin-top: 14.57vw;
+    position: absolute;
+    text-align: center;
+}
+
+.form h3 {
+    font-family: Alumni Sans;
+    font-size: 2.2vw;
+    font-weight: 600;
+    line-height: 2.64vw;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+}
+
+.form h3 {
+    margin-top: 2.56vw;
+}
+
+.form p {
+    margin-top: 0.73vw;
+}
+
+.form p {
+    font-family: "Alumni Sans";
+    font-size: 1.17vw;
+    font-weight: 400;
+    line-height: 1.24vw;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+}
+
+.name_and_form {
+    display: flex;
+    flex-direction: column;
+    width: 29.28vw;
+    margin-left: 9.81vw;
+    grid-gap: 1.24vw;
+    margin-top: 1.32vw;
+}
+
+.name_and_form input {
+    height: 1.47vw;
+}
+
+.textArea,
+.name_and_form input {
+    font-family: "Alumni Sans";
+    font-size: 1.17vw;
+    font-weight: 400;
+    line-height: 1.39vw;
+    letter-spacing: 0.01em;
+    padding: 1.02vw 1.39vw;
+    background: #ffffff73;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #797979;
+}
+
+.textArea {
+    height: 7.18vw;
+}
+
+.name_and_form input,
+.textArea {
+    border: none;
+    border-radius: 10px;
+}
+
+.send_forms {
+    border: 0.07vw solid #ffffff;
+    padding: 0.59vw 3.59vw;
+    font-size: 1.46vw;
+    line-height: 1.76vw;
+    margin-top: 1.24vw;
+}
+
+.container input {
+    cursor: pointer;
+}
+
+.form-control {
+    font-family: Alumni Sans;
+    font-size: 1.02vw;
+    font-weight: 300;
+    line-height: 1.24vw;
+    letter-spacing: 0em;
+    color: #ffffff;
+    display: flex;
+}
+
+:root {
+    --form-control-color: #ffff;
+}
+
+.radio {
+    margin-left: -4vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1.02vw;
+}
+
+.radio input[type="radio"] {
+    margin-right: 0.44vw;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.form-control + .form-control {
+    margin-top: 1em;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--form-background);
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.08em);
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+.questions {
+    margin-top: 80.97vw;
+    width: 57vw;
+    margin-left: 5.71vw;
+}
+
+.questions h3,
+.news h3,
+.recommendations h3 {
+    font-family: "Alumni Sans";
+    font-size: 4.39vw;
+    font-weight: 600;
+    line-height: 5.27vw;
+    letter-spacing: 0.01em;
+    margin-bottom: 3.51vw;
+}
+
+.news h3 {
+    margin-left: 5.71vw;
+    margin-top: 12.81vw;
+}
+
+section.questions p.rotate_arrow {
+    margin-right: 3.46vw;
+}
+
+section.questions p.rotate_arrow.why.open,
+section.questions p.rotate_arrow.chip.open,
+section.questions p.rotate_arrow.which.open,
+section.questions p.rotate_arrow.include.open,
+section.close_questions p.rotate_arrow.safety.open,
+section.close_questions p.rotate_arrow.when.open,
+section.close_questions p.rotate_arrow.alone.open,
+section.close_questions p.rotate_arrow.disease.open,
+section.close_questions p.rotate_arrow.way.open,
+section.close_questions p.rotate_arrow.limited.open,
+section.close_questions p.rotate_arrow.people.open,
+section.close_questions p.rotate_arrow.take.open,
+section.close_questions p.rotate_arrow.cabin.open,
+section.close_questions p.rotate_arrow.late.open,
+section.questions p.rotate_arrow.children.open {
+    transform: rotate(270deg);
+    margin-right: 0;
+}
+
+.close-question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.question {
+    font-family: "Alumni Sans";
+    font-size: 1.83vw;
+    font-weight: 500;
+    line-height: 2.2vw;
+    letter-spacing: 0.01em;
+    padding: 1.46vw 0;
+}
+
+.close_text {
+    display: none;
+    width: 47.05vw;
+    font-family: Alumni Sans;
+    font-size: 1.46vw;
+    font-weight: 400;
+    line-height: 1.1vw;
+    letter-spacing: 0.01em;
+    margin-bottom: 1.46vw;
+}
+
+.close_text.why.open,
+.close_text.chip.open,
+.close_text.which.open,
+.close_text.include.open,
+.close_text.children.open,
+.close_text.when.open,
+.close_text.alone.open,
+.close_text.disease.open,
+.close_text.way.open,
+.close_text.limited.open,
+.close_text.people.open,
+.close_text.take.open,
+.close_text.cabin.open,
+.close_text.late.open,
+.close_text.safety.open {
+    display: block;
+}
+
+hr.streak {
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 2px dashed #000;
+}
+
+.close_text.include.open {
+    padding: 0;
+}
+
+.hr {
+    height: 2px;
+    background-image: linear-gradient(to right, #fff 40%, #000 40%);
+    background-size: 1.3vw 2px;
+    background-repeat: repeat-x;
+    margin-left: -0.44vw;
+}
+
+.close_questions button {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.close_questions div.more_q {
+    display: flex;
+}
+
+.right-wave,
+.right-img {
+    position: absolute;
+}
+
+.question_img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-img {
+    width: 31.84vw;
+    height: 102.27vw;
+    margin-top: 65.15vw;
+}
+
+.right-wave {
+    width: 32.8vw;
+    height: 126.43vw;
+    margin-top: 46.15vw;
+}
+
+.close_questions {
+    width: 57vw;
+    margin-left: 5.71vw;
+}
+
+.close_page_questions {
+    display: none;
+}
+
+.close_page_questions.open {
+    display: block;
+}
+
+.close_questions div.more_q {
+    margin-top: 2.49vw;
+    margin-left: 45.71vw;
+    margin-bottom: 1.46vw;
+}
+
+.arrow_more.open {
+    transform: rotate(270deg);
+    margin-left: 1.3vw;
+}
+
+.from_what,
+.around {
+    display: flex;
+    align-items: center;
+    height: 9.37vw;
+    width: 55.27vw;
+    border: 1px solid #000;
+    border-radius: 40px;
+    margin-left: 22.11vw;
+    justify-content: space-around;
+}
+
+.around {
+    margin-top: -1.98vw;
+}
+
+div .begin img,
+div .journey img,
+div .how_choose img {
+    width: 2.93vw;
+    height: 2.93vw;
+    margin-left: 2.93vw;
+}
+
+div .yacht img {
+    width: 4.25vw;
+    height: 4.25vw;
+}
+
+.begin,
+.journey,
+.yacht,
+.how_choose {
+    display: flex;
+    align-items: center;
+    font-family: Alumni Sans;
+    font-size: 2.2vw;
+    font-weight: 600;
+    line-height: 2.64vw;
+    letter-spacing: 0.01em;
+    gap: 1.1vw;
+}
+
+div.from_what a,
+div.around a {
+    text-decoration: none;
+    color: #000;
+}
+
+section.close_questions p.rotate_arrow {
+    margin-right: 3.49vw;
+}
+
+.recommendations h3 {
+    text-align: center;
+}
+
+.recommendations {
+    margin-top: 10vw;
+}
+
+.wave_bottom {
+    position: absolute;
+    z-index: -5;
+    width: 52.86vw;
+    height: 115.67vw;
+    margin-top: 16.47vw;
+}
+
+footer {
+    background-image: url(./img/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 27.53vw;
+    margin-top: 10vw;
+    font-family: "Alumni Sans";
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img_city {
+    display: flex;
+    flex-direction: column;
+    gap: 16.4vw;
+}
+
+div.img_city img {
+    width: 3.51vw;
+    margin-top: 3.59vw;
+    height: 4.03vw;
+}
+
+.name_footer {
+    font-size: 1.46vw;
+    line-height: 1.76vw;
+    margin-bottom: 0.73vw;
+    margin-top: 3.29vw;
+}
+
+.cruises,
+.flot,
+.placment {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.02vw;
+    line-height: 1.24vw;
+}
+
+div.cruises a,
+div.flot a,
+div.placment a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.2vw 0px;
+}
+
+.dropdown-first {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content,
+.dropdown-content-second,
+.dropdown-content-third,
+.dropdown-content-fourth,
+.dropdown-content-fifth,
+.dropdown-content-six,
+.dropdown-content-flot {
+    margin-top: -1.25vw;
+    display: none;
+    position: absolute;
+    background: #ffffff99;
+    z-index: 1;
+    margin-left: 6.1vw;
+    border-bottom-right-radius: 20px;
+    width: 6.76vw;
+    padding: 0 0.51vw;
+}
+
+.dropdown-content-flot {
+    margin-top: -1.6vw;
+    margin-left: 5.2vw;
+    width: 5.5vw;
+}
+
+.dropdown-content {
+    margin-top: 0;
+}
+
+div.dropdown-content a,
+div.dropdown-content-third a,
+div.dropdown-content-fourth a,
+div.dropdown-content-fifth a,
+div.dropdown-content-six a,
+div.dropdown-content-second a,
+div.dropdown-content-flot a {
+    color: #000;
+}
+
+footer a:hover {
+    background-color: #ffffff59;
+}
+
+div.dropdown-first:hover .dropdown-content,
+div.dropdown-third:hover .dropdown-content-third,
+div.dropdown-fourth:hover .dropdown-content-fourth,
+div.dropdown-fifth:hover .dropdown-content-fifth,
+div.dropdown-six:hover .dropdown-content-six,
+div.dropdown-second:hover .dropdown-content-second,
+div.dropdown-flot:hover .dropdown-content-flot {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-time {
+    position: absolute;
+    margin-top: -8.82vw;
+    margin-left: 80.5vw;
+}
+
+.button-footer {
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    width: 18.24vw;
+    height: 4.04vw;
+    font-family: Alumni Sans;
+    font-size: 2.28vw;
+    font-weight: 600;
+    line-height: 2.72vw;
+    letter-spacing: 0em;
+    border: 2px solid #ffffff;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.inst_logo_footer,
+.telegram_logo_footer,
+.youTube_logo_footer {
+    width: 1.54vw;
+    height: 1.54vw;
+}
+
+.cont_img_article_footer {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.contacts_menu_footer,
+.tel_time_footer {
+    display: grid;
+    align-items: center;
+}
+
+.contacts_menu_footer {
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: 1.76vw;
+    margin-top: 1.4vw;
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+}
+
+::-moz-placeholder {
+    color: #000;
+}
+
+:-ms-input-placeholder {
+    color: #000;
+}
+
+:-moz-placeholder {
+    color: #000;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/*display none fo adaptive*/
+
+.line_adaptive,
+.background_header_adaptive,
+.contacts_head_adaptive,
+.header_nav,
+.actions_main_section_adaptive,
+.adaptive_table,
+.actions.display,
+.adaptive_form, section.news,
+footer.adaptive {
+    display: none;
+}
+
+section.booking_stages_adaptive{
+    width: 65vw;
+    margin-left: 5.71vw;
+}
+
+.stages_adaptive{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25vw;
+    height: 5.21vw;
+    margin-left: 3.75vw;
+    gap: 3.17vw;
+}
+
+h2.booking_stages{
+    font-family: "Alumni Sans";
+    font-size: 4.39vw;
+    font-weight: 500;
+    line-height: 5.27vw;
+    letter-spacing: 0.01em;
+    margin-bottom: 2vw;
+}
+
+.booking_stages_adaptive hr {
+    border: 0.5px solid #098572;
+}
+
+.text_stage {
+    font-family: "Alumni Sans";
+    font-size: 1.83vw;
+    font-weight: 500;
+    line-height: 2.2vw;
+    letter-spacing: 0.01em;
+    padding: 1.46vw 0;
+}
+
+.number_stage {
+    font-family: Alumni Sans;
+    font-size: 3.21vw;
+    font-weight: 600;
+    line-height: 6.25vw;
+    letter-spacing: 0.01em;
+}
+
+@media (max-width: 768px) {
+
+    .booking_pc, .wave_mid, .background_heade,
+    .table_full,
+    .actions_main_section, img.ship, .form, .question_img,
+    .application_window.open,
+    .application_window_end.open{
+        display: none;
+    }
+
+    .about {
+        position: absolute;
+        margin-top: 111vw;
+        color: #111111;
+        font-size: 4.79vw;
+        font-weight: 400;
+        line-height: 5.83vw;
+        letter-spacing: 0.02em;
+        width: 95vw;
+        padding: 0;
+        margin-left: 2.50vw;
+    }
+
+    .background_header_adaptive {
+        display: block;
+        height: 145.63vw;
+    }
+
+    .contacts_head_adaptive {
+        display: flex;
+        margin: 2.54vw 0 0 3.54vw;
+        justify-content: space-between;
+        position: absolute;
+        width: 85vw;
+    }
+
+    body {
+        max-width: 765px;
+    }
+
+    /* header */
+    .head {
+        display: none;
+    }
+
+    .header_nav p.h1_burger {
+        font-family: "Alumni Sans";
+        font-size: 6.25vw;
+        font-weight: 600;
+        line-height: 7.50vw;
+        letter-spacing: 0.01em;
+        margin-top: 2.29vw;
+        margin-left: 3.54vw;
+    }
+
+    .cont_img_article {
+        display: none;
+    }
+
+    .header_container {
+        margin-left: 91.04vw;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    .header_nav {
+        display: block;
+        position: absolute;
+        background: #fff;
+        box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
+        transition: all 0.4s ease;
+        left: -500%;
+    }
+
+    .header_menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-top: 20.42vw;
+    }
+
+    .menu_item {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .header_nav.open-menu {
+        margin-top: -6.6vw;
+        left: 0;
+        height: 400%;
+        overflow-y: hidden;
+        width: 100vw;
+        z-index: 1;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .menu-burger_header {
+        position: relative;
+        width: 5vw;
+        height: 6.67vw;
+        display: block;
+        margin-left: 10px;
+        z-index: 5;
+    }
+
+    .menu-burger_header span,
+    .menu-burger_header:after,
+    .menu-burger_header:before {
+        height: 4px;
+        width: 5vw;
+        position: absolute;
+        background: #515758;
+        margin: 0 auto;
+        background-color: #000;
+    }
+
+    .menu-burger_header span {
+        top: 5vw;
+    }
+
+    .menu-burger_header:after,
+    .menu-burger_header:before {
+        content: "";
+    }
+
+    .menu-burger_header:after {
+        bottom: -3px;
+    }
+
+    .menu-burger_header:before {
+        top: 3.33vw;
+        /* position: fixed;
+        width: 5vw; */
+    }
+
+    .menu-burger_header.open-menu span {
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .menu-burger_header.open-menu:before {
+        transform: rotate(45deg);
+        top: 3.5vw;
+        transition: 0.4s;
+    }
+
+    .menu-burger_header.open-menu:after {
+        transform: rotate(-45deg);
+        bottom: 2.5vw;
+        transition: 0.4s;
+    }
+
+    .content-wrapper {
+        margin-top: 48px;
+    }
+
+    /* burger head */
+    .logo img {
+        height: 8.75vw;
+        width: 8.75vw;
+    }
+
+    .header_menu a {
+        text-decoration: none;
+        display: block;
+        transition: 0.4s ease-in-out;
+        color: #111111;
+    }
+
+    .header_menu > li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header_menu .submenu.open,
+    .header_menu .submenu_cruise.open,
+    .header_menu .submenu_bort.open {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .submenu_burger {
+        display: none;
+    }
+
+    .submenu_burger.open {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .second_text_burger {
+        display: none;
+    }
+
+    ul.header_menu li button,
+    ul.submenu_premium li a,
+    .href_nav {
+        background: none;
+        border: none;
+        font-family: "Alumni Sans";
+        font-weight: 400;
+        font-size: 7.29vw;
+        line-height: 8.75vw;
+        color: #111111;
+    }
+
+    .burger_cruises.open {
+        color: #f06500;
+    }
+
+    .href_nav:hover {
+        text-decoration: underline;
+    }
+
+    /* second menu */
+    .submenu_cruises,
+    .submenu_flot,
+    .submenu_premium,
+    .submenu_bort_burger {
+        display: none;
+    }
+
+    .submenu.open,
+    ul.submenu_cruises.open,
+    ul.submenu_flot.open,
+    ul.submenu_premium.open,
+    ul.submenu_bort_burger.open,
+    .burger_flot.open,
+    .burger_placment.open,
+    .burger_premium.open,
+    .burger_bort.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        color: #f06500;
+    }
+
+    .submenu.open,
+    ul.submenu_cruises.open,
+    ul.submenu_flot.open,
+    ul.submenu_premium.open,
+    ul.submenu_bort_burger.open {
+        align-items: flex-start;
+    }
+
+    .submenu li button {
+        font-family: "Alumni Sans";
+        font-size: 1.02vw;
+        font-weight: 400;
+        line-height: 1.24vw;
+        letter-spacing: 0em;
+        padding-left: 0;
+    }
+
+    .submenu li button a {
+        color: #000;
+    }
+
+    .submenu .open {
+        display: none;
+    }
+
+    .submenu :hover .close {
+        display: none;
+    }
+
+    .submenu :hover .open {
+        display: flex;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .submenu_bort {
+        height: 11.79vw;
+    }
+
+
+    .second_flot {
+        display: none;
+    }
+
+    .second_text_burger.open,
+    .second_flot.open {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+    }
+
+
+    .submenu_cruise.premium {
+
+        height: 4.93vw;
+    }
+
+
+    .search_input {
+        display: flex;
+        justify-content: center;
+        font-size: 4.17vw;
+        font-weight: 400;
+        line-height: 5vw;
+        margin-top: 13.54vw;
+    }
+
+    #searchForm {
+        height: 8.96vw;
+        width: 82.92vw;
+    }
+
+    .dropdown_text a,
+    .submenu_flot li button.dropdown_text,
+    .submenu_flot li button.dropdown_text_flot,
+    .submenu_burger li button.dropdown_text,
+    ul.submenu_premium li a,
+    .submenu_bort_burger li button.dropdown_text {
+        color: #000;
+        font-family: "Alumni Sans";
+        font-size: 6.25vw;
+        font-weight: 400;
+        line-height: 7.50vw;
+    }
+
+    ul.second_text_burger li button,
+    ul.second_flot li button {
+        font-family: "Alumni Sans";
+        font-size: 5.21vw;
+        font-weight: 400;
+        line-height: 6.25vw;
+    }
+
+    ul.second_text_burger li button {
+        border-left: 1px solid #F06500;
+        margin-left: 2vw;
+    }
+
+    .submenu_burger li button.dropdown_text.open {
+        color: #f06500;
+    }
+
+    .contacts_burger {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 3.33vw;
+    }
+
+    .number {
+        margin-left: 3.54vw;
+        font-size: 4.17vw;
+        font-weight: 500;
+        line-height: 5vw;
+        text-decoration: underline;
+    }
+
+    .social_contacts {
+        margin-right: 4.38vw;
+    }
+
+    .adaptive_logo, .social_contacts {
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+    }
+
+    .logo_burger,
+    .adaptive_logo img,
+    .footer_adaptive_contacts img {
+        display: flex;
+        height: 5.25vw;
+        width: 5.25vw;
+    }
+
+    .logo {
+        margin-top: 1vw;
+    }
+
+    .world {
+        font-family: Alumni Sans;
+        font-size: 11.46vw;
+        font-weight: 600;
+        line-height: 12.08vw;
+        text-align: left;
+
+    }
+
+    .main_butt {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 79.58vw;
+    }
+
+    .application {
+        background: #f06500;
+        border: none;
+        font-size: 7.71vw;
+        font-weight: 600;
+        line-height: 9.17vw;
+    }
+
+    .line_adaptive {
+        display: block;
+        position: absolute;
+        width: 77.50vw;
+        height: 83.54vw;
+        margin-top: 40.42vw;
+        z-index: -1;
+    }
+
+    .actions_main_section_adaptive {
+        display: block;
+    }
+
+    h2.actions.display {
+        display: block;
+        font-family: "Alumni Sans";
+        font-size: 6.25vw;
+        font-weight: 600;
+        line-height: 7.50vw;
+        letter-spacing: 0.01em;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 40.96vw;
+        margin-bottom: 3.13vw;
+    }
+
+    .shell_adaptive.close {
+        display: none;
+    }
+
+    .shell_adaptive.open,
+    .shell_adaptive.second.open,
+    .shell_adaptive.third.open,
+    .shell_adaptive.fourth.open {
+        display: block;
+    }
+
+    img.action_photo_adaptive {
+        height: 113.75vw;
+        width: 100vw;
+        position: absolute;
+        z-index: -5;
+    }
+
+    .actions_main_section_adaptive {
+        display: flex;
+    }
+
+    .actions_main_section_adaptive button.adaptive_button_left,
+    .actions_main_section_adaptive button.adaptive_button_right {
+        height: 113.75vw;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.0);
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 4.2vw;
+        line-height: 3.64vw;
+        width: 12.71vw;
+    }
+
+    .actions_main_section_adaptive button.adaptive_button_left:hover,
+    .actions_main_section_adaptive button.adaptive_button_right:hover {
+        background: #D4D4D466;
+
+    }
+
+    .button_adaptive_flex {
+        display: flex;
+        width: 100vw;
+        position: absolute;
+        justify-content: space-between;
+
+    }
+
+    .section_shell {
+        display: flex;
+        margin-top: 96.46vw;
+        flex-direction: column;
+        width: 100vw;
+        margin-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .text_photo {
+        width: 60vw;
+        font-family: Alumni Sans;
+        font-size: 7.29vw;
+        font-weight: 400;
+        line-height: 7.29vw;
+        letter-spacing: 0.01em;
+        text-align: center;
+
+    }
+
+    .time_action {
+        font-family: Alumni Sans;
+        font-size: 5.21vw;
+        font-weight: 600;
+        line-height: 6.25vw;
+        letter-spacing: 0.01em;
+        text-align: center;
+        margin-top: 6.46vw;
+    }
+
+    .booking {
+        font-family: Alumni Sans;
+        font-size: 5.21vw;
+        font-weight: 400;
+        line-height: 5.63vw;
+        letter-spacing: 0.01em;
+        text-align: center;
+        width: 70.83vw;
+    }
+
+    div.section_shell a {
+        font-family: Alumni Sans;
+        font-size: 4.17vw;
+        font-weight: 400;
+        line-height: 5vw;
+        letter-spacing: 0.01em;
+        margin-top: 8.13vw;
+        margin-left: 26.52vw;
+    }
+
+    .more_button {
+        margin-top: 5.63vw;
+    }
+
+    div.more_button button {
+        border: 2px solid #f06500;
+        background: none;
+        width: 46.88vw;
+        height: 10.42vw;
+        font-family: Alumni Sans;
+        font-size: 6.46vw;
+        font-weight: 600;
+        line-height: 7.71vw;
+        border-radius: 40px;
+    }
+
+    div.section_shell hr {
+        box-shadow: 0px 4px 10px #555;
+        width: 100vw;
+        margin-top: 9.79vw;
+    }
+
+    div.button_adaptive_flex button.adaptive_button_left.first.close,
+    div.button_adaptive_flex button.adaptive_button_left.second.close,
+    div.button_adaptive_flex button.adaptive_button_left.third.close,
+    div.button_adaptive_flex button.adaptive_button_left.fourth.close,
+    div.button_adaptive_flex button.adaptive_button_right.first.close,
+    div.button_adaptive_flex button.adaptive_button_right.second.close,
+    div.button_adaptive_flex button.adaptive_button_right.third.close,
+    div.button_adaptive_flex button.adaptive_button_right.fourth.close {
+        display: none;
+    }
+
+    .adaptive_table {
+        margin-top: 180vw;
+        display: block;
+    }
+
+    .table_text_why {
+        margin-left: 20.42vw;
+        font-size: 4.17vw;
+        font-weight: 400;
+        line-height: 5vw;
+        letter-spacing: 0.01em;
+        margin-bottom: 1.67vw;
+    }
+
+    p.big_table_text,
+    .big_table_text {
+        margin: 0;
+        font-size: 5.21vw;
+        font-weight: 600;
+        line-height: 6.25vw;
+        letter-spacing: 0.01em;
+        width: 77.08vw;
+        padding-top: 3.96vw;
+        padding-left: 5.63vw;
+    }
+
+    .table_wrapper {
+        width: 91vw;
+        margin-left: 3.75vw;
+        height: 81vw;
+    }
+
+    .table_text {
+        font-family: Alumni Sans;
+        font-size: 4.17vw;
+        font-weight: 400;
+        line-height: 4.38vw;
+        letter-spacing: 0.01em;
+        padding-left: 5.63vw;
+        padding-bottom: 4.17vw;
+    }
+
+    td {
+        border-left: 1px solid #ffff;
+        border-bottom: 1px solid black;
+    }
+
+    h1 {
+        margin-left: 20.42vw;
+        font-size: 6.25vw;
+        font-weight: 600;
+        line-height: 7.50vw;
+    }
+
+    .booking_stages_adaptive {
+        display: block;
+    }
+
+    .booking_stages_adaptive hr {
+        border: 0.5px solid #098572
+    }
+
+    .stages_adaptive {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.25vw;
+        height: 10.21vw;
+        margin-left: 3.75vw;
+        gap: 4.17vw;
+    }
+
+    .number_stage {
+        font-family: Alumni Sans;
+        font-size: 5.21vw;
+        font-weight: 600;
+        line-height: 6.25vw;
+        letter-spacing: 0.01em;
+    }
+
+    .text_stage {
+        font-family: Alumni Sans;
+        font-size: 4.17vw;
+        font-weight: 500;
+        line-height: 5vw;
+        letter-spacing: 0.01em;
+    }
+
+    h2.booking_stages {
+        margin: 11.67vw 0 3.33vw 20.42vw;
+        font-size: 6.25vw;
+        font-weight: 600;
+        line-height: 7.50vw;
+    }
+
+    .adaptive_form {
+        color: #FFFF;
+        display: block;
+    }
+
+    .adaptive_form h3 {
+        margin-top: 6.25vw;
+        font-family: Alumni Sans;
+        font-size: 8.33vw;
+        font-weight: 600;
+        line-height: 10vw;
+        text-align: center;
+    }
+
+    .name_and_form {
+        gap: 2.50vw;
+        margin-top: 6.46vw;
+    }
+
+    .img_form p {
+        font-family: Alumni Sans;
+        font-size: 4.17vw;
+        font-weight: 400;
+        line-height: 4.38vw;
+        letter-spacing: 0.01em;
+        text-align: center;
+        margin-top: 4.38vw;
+
+    }
+
+    .name_and_form input, .textArea {
+        width: 81.67vw;
+        height: 9.17vw;
+
+        font-size: 4.17vw;
+        font-weight: 400;
+        line-height: 5vw;
+        color: #000000;
+    }
+
+    .textArea {
+        height: 21.88vw;
+    }
+
+    .img_form {
+        display: flex;
+        background-image: url(./img/form-back-adaptive.png);
+        background-position-y: -15.52vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 126.25vw;
+        width: 100vw;
+        flex-direction: column;
+        margin-top: 12.50vw;
+    }
+
+    input[type="radio"]::before {
+        width: 2.29vw;
+        height: 2.29vw;
+        box-shadow: inset 1em 1em #000000;
+    }
+
+    input[type="radio"] {
+        width: 3.54vw;
+        height: 3.54vw;
+    }
+
+    .form-control {
+        color: #111111;
+        font-size: 3.75vw;
+        font-weight: 400;
+        line-height: 4.58vw;
+    }
+
+    .radio {
+        margin: 0;
+    }
+
+    .send_forms {
+        margin-left: 30.63vw;
+        width: 38.75vw;
+        height: 8.75vw;
+        margin-top: 7.71vw;
+        font-family: Alumni Sans;
+        font-size: 6.25vw;
+        font-weight: 600;
+        line-height: 7.50vw;
+    }
+
+    .questions {
+        margin-top: 11.88vw;
+        margin-left: 0;
+        text-align: center;
+        width: 100vw;
+    }
+
+    .hr {
+        background-image: linear-gradient(to right, #fff 40%, #F06500 40%);
+        height: 1px;
+    }
+
+    .close_questions {
+        width: 100vw;
+        margin: 0;
+        align-items: center;
+    }
+
+    .question {
+        padding: 2.71vw 0 2.71vw 3.33vw;
+        font-size: 5.21vw;
+        line-height: 6.25vw;
+        text-align: left;
+        width: 71vw;
+    }
+
+    section.questions p.rotate_arrow,
+    section.close_questions p.rotate_arrow{
+        margin-right: 13.46vw;
+    }
+
+    section.questions p.rotate_arrow.open {
+        margin-right: 7.46vw;
+    }
+
+    .arrow_more.open {
+        margin-left: 5.3vw;
+    }
+
+    section.questions div.close-question.chip p.rotate_arrow.chip{
+        margin-right: 16.6vw;
+    }
+
+    section.questions div.close-question.chip p.rotate_arrow.chip.open{
+        margin-right: 7.6vw;
+    }
+
+    .rotate_arrow, .rotate_arrow_close, .arrow_more {
+        font-size: 7.83vw;
+        font-weight: 400;
+        line-height: 1.2vw;
+    }
+
+    .close_questions button {
+        font-size: 4.17vw;
+        line-height: 5vw;
+    }
+
+    .close_questions div.more_q {
+        margin: 3.96vw 0 3.96vw 39.79vw;
+    }
+
+    .close_text {
+        width: 96.46vw;
+        font-size: 4.17vw;
+        line-height: 4.79vw;
+        letter-spacing: 0.01em;
+        margin-bottom: 1.46vw;
+        text-align: left;
+        margin-left: 3.33vw;
+    }
+
+    .section.close_questions p.rotate_arrow {
+        margin-right: 12.49vw;
+    }
+
+
+
+    .from_what, .around {
+        width: 92.92vw;
+        height: 15.63vw;
+        margin-left: 3.54vw;
+    }
+
+    div .begin img, div .journey img, div .how_choose img {
+        width: 4.58vw;
+        height: 4.58vw;
+        margin-left: 5.42vw;
+    }
+
+    div .yacht img {
+        width: 7.25vw;
+        height: 7.25vw;
+    }
+
+    .begin, .journey, .yacht, .how_choose {
+        font-size: 4.17vw;
+        font-weight: 500;
+        line-height: 5vw;
+        gap: 1.88vw;
+    }
+
+    footer {
+        display: none;
+    }
+
+    footer.adaptive {
+        display: block;
+        background-image: none;
+        height: auto;
+        color: #111111;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5vw;
+        margin-bottom: 5.17vw;
+        margin-left: 3.54vw;
+    }
+
+    .tel_nav {
+        font-size: 4.17vw;
+        font-weight: 500;
+        line-height: 5vw;
+    }
+
+    .time {
+        font-size: 2.50vw;
+        line-height: 3.13vw;
+    }
+
+    .button_footer_adaptive button {
+        background: none;
+        border: 1px solid #f06500;
+        color: #111111;
+        font-family: Alumni Sans;
+        font-size: 6.46vw;
+        font-weight: 600;
+        line-height: 7.71vw;
+        width: 46.88vw;
+        height: 10.42vw;
+        border-radius: 40px;
+    }
+
+    .footer_adaptive_contacts {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}

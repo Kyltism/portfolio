@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Redirection PHP</title>
+</head>
+<body>
+<input type="text" id="searchInput" placeholder="Search here..." autocomplete="off">
+<button onclick="search()">Search</button>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("#searchInput").addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                search();
+            }
+        });
+    });
+
+    function search() {
+        const input = document.getElementById('searchInput').value;
+
+        fetch('search.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: 'query=' + encodeURIComponent(input)
+        })
+            .then(response => response.text())
+            .then(url => {
+                window.location.href = url;
+            });
+    }
+</script>
+</body>
+</html>
