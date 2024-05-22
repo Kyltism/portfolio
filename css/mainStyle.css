@@ -1,0 +1,953 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 768px;
+    background-color: #47538D;
+    overflow-x: hidden;
+}
+
+.fixed-page{
+    position: fixed;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.display {
+    display: none;
+}
+
+header {
+    display: flex;
+    margin: 70px auto auto 78px;
+    display: flex;
+    gap: 552px;
+}
+
+@font-face {
+    font-family: 'MADE SAONARA';
+    src: url('../fonts/maidSaonara/MADESAONARA.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+.header__nav {
+    top: 0;
+    display: block;
+    position: absolute;
+    background: #FFEFEF;
+    width: 768px;
+    box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
+    transition: all 0.4s ease;
+    left: -500%;
+}
+
+.header__container {
+    padding: 7px;
+}
+
+.header__menu {
+    position: absolute;
+    z-index: 65;
+    top: 280px;
+    left: 240px;
+    display: grid;
+    justify-items: center;
+    grid-auto-flow: row;
+    grid-gap: 20px;
+}
+
+.menu__item {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    color: #FFEFEF;
+    text-decoration: none;
+}
+
+.header__nav.open-menu {
+    top: 0;
+    left: 0;
+    height: 5600px;
+}
+
+li {
+    list-style: none;
+}
+
+.menu-burger__header {
+    position: relative;
+    display: block;
+    z-index: 5;
+}
+
+.menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before {
+    height: 1px;
+    width: 30px;
+    position: absolute;
+    background: #515758;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+.menu-burger__header span {
+    top: 8px;
+}
+
+.menu-burger__header:after, .menu-burger__header:before {
+    content: '';
+}
+
+.menu-burger__header:after {
+    top: 16px;
+}
+
+.menu-burger__header:before {
+    top: 0px;
+}
+
+.menu-burger__header.open-menu span {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.menu-burger__header.open-menu:before {
+    background-color: #47538D;
+    transform: rotate(45deg);
+    top: 16px;
+    transition: 0.4s;
+}
+
+.menu-burger__header.open-menu:after {
+    background-color: #47538D;
+    transform: rotate(-45deg);
+    bottom: 16px;
+    transition: 0.4s;
+}
+
+.ellipse {
+    width: 595.42px;
+    height: 438.96px;
+    background-color: #47538D;
+    border-radius: 50%;
+    transform: rotate(21deg);
+    top: 181px;
+    left: 75px;
+    position: absolute;
+}
+
+h1 {
+    margin: 100px 0px 0px 123px;
+    color: #FFEFEF;
+    font-family: 'MADE SAONARA';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 77px;
+}
+
+.main_city, .photoFood {
+    margin: 61px auto 0 152px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -3;
+}
+
+.around {
+    margin: 61px auto 0 152px;
+    width: 467px;
+    height: 253px;
+    border: 1px solid #FFC8CF;
+    transform: rotate(20deg);
+    border-radius: 50%;
+    z-index: -2;
+    position: absolute;
+}
+
+.star1, .star2 {
+    position: absolute;
+    z-index: -2;
+}
+
+.star1 {
+    margin: 70px auto 0 542px;
+}
+
+.star2 {
+    margin: 253px auto 0 179px;
+}
+
+.h2 {
+    display: grid;
+    justify-items: center;
+    grid-auto-flow: row;
+    margin-top: 379px;
+    color: #FFEFEF;
+}
+
+h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+hr {
+    width: 30px;
+}
+
+
+.me, .nameParcel, .buyer {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 85px;
+    color: #FFEFEF;
+    text-align: center;
+}
+
+.me {
+    margin: 126px auto 0 auto;
+}
+
+.photoChiv {
+    margin-top: 65px;
+}
+
+.myPicture, .myPicture480 {
+    border-top-left-radius: 45% 208px;
+    border-top-right-radius: 45% 208px;
+    margin: 53px auto 0px 149px;
+}
+
+.myPicture480 {
+    display: none;
+}
+
+.amore, .amoreSaint {
+    position: absolute;
+    z-index: -4;
+    margin: 238px auto 0px -611px;
+}
+
+.myName, .parcelsItaly, .orders {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFEFEF;
+    margin-top: 46px;
+}
+
+.parcelsItaly {
+    margin-top: 450px;
+}
+
+.textMe {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFEFEF;
+}
+
+.gastroPhoto, .gastroPhoto_1, .saint, .laurent {
+    border-top-left-radius: 45% 208px;
+    border-top-right-radius: 45% 208px;
+    position: relative;
+    z-index: -3;
+}
+
+.saint {
+    margin-left: 78px;
+    margin-right: 20px;
+}
+
+.photo1, .photo2, .photo3 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 85px;
+    text-transform: uppercase;
+    color: #FFEFEF;
+    position: absolute;
+    z-index: -2;
+}
+
+.photo1 {
+    margin: 403px auto 0 241px;
+}
+
+.photo2 {
+    margin: 403px auto 0 219px;
+}
+
+.photo3 {
+    margin: 403px auto 0 219px;
+}
+
+.names, .dates, .prices {
+    grid-gap: 20%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    justify-content: start;
+    margin-left: 10%;
+    margin-bottom: -4%;
+
+}
+
+.prices {
+    grid-gap: 37%;
+}
+
+
+.gastro1, .gastro2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+    color: #FFEFEF;
+}
+
+
+.date2 {
+    margin-top: 78px;
+}
+
+
+.date1, .date2, .date3, .price1, .price2, .mainList, .listTour1, .listTour2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFEFEF;
+}
+
+.price1, .price2 {
+    margin-top: 0px;
+}
+
+.href2 {
+    margin-right: -110px;
+}
+
+.price1, .price2 {
+    position: absolute;
+    z-index: -3;
+    font-weight: 400;
+
+}
+
+
+.hrefA1 {
+    margin: 0px auto auto 272px;
+    position: inherit;
+    z-index: -3;
+}
+
+.hrefA2 {
+    margin: 0px auto auto 262px;
+    position: inherit;
+
+    z-index: -3;
+}
+
+.nameParcel {
+    margin-top: 150px;
+}
+
+.photoFood {
+    margin: 66px auto 0 160px;
+}
+
+
+
+.parcelsHref {
+    margin: 25px auto 0 616px;
+}
+
+.buyer {
+    margin-top: 160px;
+}
+
+.amoreSaint {
+    margin: 88px auto 0px -692px;
+}
+
+.orders {
+    width: 500px;
+    margin: 46px auto 0 134px;
+}
+
+.ordersHref {
+    margin: 25px auto 0 671px;
+}
+
+
+
+
+
+
+
+
+
+
+.gastroPhoto_1.first, .gastroPhoto_1480.first, .gastro1, .date1, .price1 {
+    margin-left: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+:root {
+    --swiper-theme-color: #FFEFEF;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 45px;
+}
+
+.swiper-slide.margin {
+    margin-right: 0px;
+}
+
+.swiper-pagination {
+    position: inherit;
+    margin-top: 54px;
+}
+
+
+.swiper-slide {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+/* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    border: 1px solid #FFEFEF;
+    width: 99%;
+    margin-top: 198px;
+}
+
+.goder {
+    font-family: 'MADE SAONARA';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #FFEFEF;
+    text-align: center;
+    margin-bottom: 41px;
+}
+
+.arrow {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.arrowMain.overturn {
+    transform: rotate(180deg);
+}
+
+.listTours {
+    display: none;
+}
+
+.listTours.open {
+    display: grid;
+}
+
+.mainList, .arrowMain {
+    line-height: 26px;
+    margin: 6px 0 0 75px;
+}
+
+.arrowMain {
+    margin-left: 22px;
+}
+
+.arrowImg1, .arrowImg2, .arrowImg3 {
+    margin-top: 12px;
+    /* margin-left: 789%; */
+}
+
+.listTour1, .listTour2 {
+    text-decoration: none;
+    margin: 10px 0 0 35px;
+    line-height: 26px;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.listTour1 {
+    margin-bottom: 26px;
+}
+
+.footerGrid {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.icons {
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-flow: column;
+    margin: 74px auto 72px 300px;
+}
+
+.icons.open {
+    margin: 146px auto 72px 253px;
+}
+
+.main_city2, .photoFood480, .amore480, .amoreSaint480 {
+    display: none;
+}
+
+.saint480, .laurent480 {
+    display: none;
+    width: 41%;
+}
+
+.gastroPhoto_1480, .gastroPhoto48 {
+    display: none;
+    width: 93%;
+}
+
+.textMe{
+    margin-bottom: 0px;
+}
+
+.textMe.abz{
+    margin-top: 15px;
+}
+
+
+
+@media all and (max-width: 480px) {
+    body {
+        width: 100%;
+        max-width: 480px !important;
+    }
+
+    .gastroPhoto_1480.display {
+        display: none;
+    }
+
+    .textMe.abz{
+        margin-top: 10px;
+    }
+
+    .swiper{
+        margin-top: 36px;
+    }
+
+    .swiper-pagination{
+        margin-top: 56px;
+    }
+
+    .header__nav {
+        width: 100%;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    header {
+        gap: 82%;
+        margin: 11% auto 0 8%;
+    }
+
+    .menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before {
+        width: 23px;
+    }
+
+    .ellipse {
+        width: 85%;
+        height: 5%;
+        left: 7%;
+        top: 3%;
+    }
+
+    .menu__item {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+
+
+    .header__menu {
+        grid-gap: 18px;
+        top: 3.5%;
+        left: 24%;
+    }
+
+    h1 {
+        margin: 106px auto auto auto;
+        text-align: center;
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .star1, .star2 {
+        width: 28px;
+    }
+
+    .around {
+        width: 70%;
+        height: 174px;
+        margin: 7% auto 0 15%;
+    }
+
+
+    .main_city {
+        display: none;
+    }
+
+    .main_city2, .photoFood480 {
+        max-width: 71%;
+        display: block;
+        margin: 9% auto 0 15%;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -3;
+    }
+
+    .star1 {
+        margin: 9% auto 0 74%;
+    }
+
+    .star2 {
+        margin: 37% auto 0 19%;
+    }
+
+    .h2 {
+        margin-top: 64%;
+    }
+
+    h2 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    hr {
+        width: 20px;
+    }
+
+    .me, .nameParcel, .buyer {
+        font-size: 36px;
+        line-height: 53px;
+        margin-top: 21%;
+    }
+
+    .myPicture {
+        display: none;
+    }
+
+    .myPicture480 {
+        width: 65%;
+        display: block;
+        margin: 9% auto 0px 16.8%;
+    }
+
+
+    .amore480, .amoreSaint480 {
+        position: absolute;
+        z-index: -4;
+    }
+
+    .amoreSaint480 {
+
+        display: block;
+    }
+
+    .amore480 {
+        width: 99%;
+        display: block;
+        margin-top: -73%;
+    }
+
+    .myName {
+        margin-top: 38px;
+        margin-bottom: 20px;
+    }
+
+    .myName, .parcelsItaly, .orders {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .parcelsItaly {
+        margin-top: 60%;
+    }
+
+
+
+    .textMe {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .gastroPhoto_1, .gastroPhoto, .saint, .laurent, .amore, .amoreSaint {
+        display: none;
+    }
+
+    .gastroPhoto_1480, .gastroPhoto480, .saint480, .laurent480 {
+        display: initial;
+        z-index: -3;
+        position: relative;
+    }
+
+    .date1, .date2, .date3, .price1, .price2 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .photo1, .photo2, .photo3 {
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    .photoChiv {
+        margin-top: 10%;
+    }
+
+    .gastroPhoto_1480, .saint480 {
+        margin-left: 6.5%;
+        margin-right: 3%;
+    }
+
+    .gastroPhoto_1480 {
+        margin-left: 3%;
+
+    }
+
+
+    .gastroPhoto_1480.first {
+        margin-left: 11px;
+    }
+
+    .gastro1, .gastro2 {
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .names, .dates, .prices {
+        margin-bottom: -6%;
+        margin-left: 5%;
+        display: grid;
+        grid-auto-flow: column;
+        justify-items: center;
+        justify-content: start;
+        grid-gap: 19%;
+    }
+
+    .arrowImg1 {
+        /* margin-left: 670%; */
+    }
+
+    .arrowImg2 {
+        /* margin-left: 950%; */
+    }
+
+    .prices {
+        grid-gap: 21%;
+    }
+
+
+    .dates {
+        grid-gap: 16%;
+    }
+
+    .hrefA1 {
+        margin: -8% auto 0 88%;
+    }
+
+    .hrefA2 {
+        margin: -8% auto 0 84%;
+    }
+
+    /* .prices {
+        grid-gap: 61.5%;
+    } */
+
+    .photo1 {
+        margin: 127% auto 0 75%;
+    }
+
+    .photo2, .photo3 {
+        margin: 127% auto 0 72%;
+    }
+
+    .price2, .date2, .gastro2, .date3 {
+        margin-left: 3%;
+    }
+
+    .arrowImg, .arrowImg1, .arrowImg2, .arrowImgItaly, .arrowImg3 {
+        width: 20px;
+    }
+
+    .date2 {
+        margin-top: 58px;
+    }
+
+
+
+
+
+
+    .nameParcel {
+        margin-top: 31%;
+        margin-bottom: 2%;
+    }
+
+    .photoFood {
+        display: none;
+    }
+
+
+    .parcelsHref {
+        margin-left: 88%;
+    }
+
+    .buyer {
+        margin-top: 35%;
+    }
+
+    .myPicture480 {
+        border-top-left-radius: 45% 155px;
+        border-top-right-radius: 45% 155px;
+    }
+
+    .gastroPhoto_1480, .gastroPhoto480, .saint480, .laurent480 {
+        border-top-left-radius: 50% 125px;
+        border-top-right-radius: 50% 125px;
+
+    }
+
+    .amoreSaint480 {
+        margin-top: -61%;
+        width: 99%;
+    }
+
+    .orders {
+        margin-top: 7%;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ordersHref {
+        margin-left: 90%;
+    }
+
+    .footer {
+        margin-top: 128px;
+    }
+
+    .goder {
+        margin-top: 36px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .mainList {
+        font-size: 16px;
+        line-height: 26px;
+        width: 103px;
+    }
+
+    .mainList {
+        line-height: 26px;
+        margin: 5px 0 0 35px;
+    }
+
+    .arrowMain {
+        margin-left: -53px;
+        width: 12px;
+    }
+
+    .listTours.open {
+        width: 215px;
+    }
+
+    .listTour1, .listTour2 {
+        font-size: 12px;
+        line-height: 22px;
+        margin-left: -7px;
+    }
+
+    .icons {
+        grid-gap: 10%;
+        margin: 33% auto 72px 33%;
+    }
+
+    .icons.open {
+        margin: 123% auto 72px -5%;
+    }
+}

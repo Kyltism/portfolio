@@ -1,0 +1,764 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 768px;
+    background-color: #47538D;
+    overflow-x: hidden;
+}
+
+.fixed-page {
+    position: fixed;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    margin: 70px auto auto 78px;
+    display: flex;
+    gap: 552px;
+}
+
+@font-face {
+    font-family: 'MADE SAONARA';
+    src: url('../fonts/maidSaonara/MADESAONARA.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+.header__nav {
+    top: 0;
+    display: block;
+    position: absolute;
+    background: #FFEFEF;
+    width: 768px;
+    box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
+    transition: all 0.4s ease;
+    left: -500%;
+}
+
+.header__container {
+    padding: 7px;
+}
+
+.header__menu {
+    position: absolute;
+    z-index: 65;
+    top: 280px;
+    left: 240px;
+    display: grid;
+    justify-items: center;
+    grid-auto-flow: row;
+    grid-gap: 20px;
+}
+
+.menu__item {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    color: #FFEFEF;
+    text-decoration: none;
+}
+
+.header__nav.open-menu {
+    top: 0;
+    left: 0;
+    height: 5600px;
+}
+
+li {
+    list-style: none;
+}
+
+.menu-burger__header {
+    position: relative;
+    display: block;
+    z-index: 5;
+}
+
+.menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before {
+    height: 1px;
+    width: 30px;
+    position: absolute;
+    background: #515758;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+.menu-burger__header span {
+    top: 8px;
+}
+
+.menu-burger__header:after, .menu-burger__header:before {
+    content: '';
+}
+
+.menu-burger__header:after {
+    top: 16px;
+}
+
+.menu-burger__header:before {
+    top: 0px;
+}
+
+.menu-burger__header.open-menu span {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.menu-burger__header.open-menu:before {
+    background-color: #47538D;
+    transform: rotate(45deg);
+    top: 16px;
+    transition: 0.4s;
+}
+
+.menu-burger__header.open-menu:after {
+    background-color: #47538D;
+    transform: rotate(-45deg);
+    bottom: 16px;
+    transition: 0.4s;
+}
+
+.ellipse {
+    width: 595.42px;
+    height: 438.96px;
+    background-color: #47538D;
+    border-radius: 50%;
+    transform: rotate(21deg);
+    top: 181px;
+    left: 75px;
+    position: absolute;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 74px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFEFEF;
+    margin-top: 107px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    margin-top: 125px;
+    text-transform: inherit;
+}
+
+.chivitasGod, .chivitasGod2 {
+    border-radius: 50%;
+    position: absolute;
+    z-index: -3;
+    margin-top: 65px;
+    margin-left: 152px;
+}
+
+
+.around {
+    margin: 61px auto 0 152px;
+    width: 467px;
+    height: 253px;
+    border: 1px solid #FFC8CF;
+    transform: rotate(20deg);
+    border-radius: 50%;
+    z-index: -2;
+    position: absolute;
+}
+
+h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFEFEF;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.authorGastro {
+    margin-top: 381px;
+    margin-bottom: 0px;
+}
+
+
+.aboutUs {
+    display: block;
+    margin-top: 65px;
+    margin-left: 151px;
+    border-top-left-radius: 45% 208px;
+    border-top-right-radius: 45% 208px;
+}
+
+.amore, .amore480 {
+    margin-top: -500px;
+    position: absolute;
+    z-index: -3;
+}
+
+.aboutUs2, .amore480, .chivitasGod2, .listTours, .amore480_2 {
+    display: none;
+}
+
+.textUs {
+    margin-top: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFEFEF;
+}
+
+.abz {
+    margin-top: 15px;
+}
+
+.days {
+    margin-top: 55px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 26px;
+    margin-left: 154px;
+}
+
+.day1, .day2, .day3, .day4, .day5 {
+    padding: 26px;
+    border-bottom-right-radius: 208px;
+    border-top-right-radius: 208px;
+    width: 460px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #47538D;
+    background-image: url(../img/Group\ 33.png);
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+}
+
+.day1.color, .day2.color, .day3.color, .day4.color, .day5.color {
+    background-image: url(../img/Group\ 32.png);
+    color: #FFEFEF;
+}
+
+.arrowGodDiv {
+    display: grid;
+    grid-auto-flow: row;
+    margin: -676px auto 0 600px;
+    grid-gap: 132px;
+}
+
+.arrowGod1.rotate {
+    margin-top: -817px;
+}
+
+.arrowGod1.rotate {
+    margin-top: -817px;
+}
+
+.day1Text, .day2Text, .day3Text, .day4Text, .day5Text {
+    display: none;
+}
+
+.day1Text.open, .day2Text.open, .day3Text.open, .day4Text.open, .day5Text.open {
+    display: block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFEFEF;
+    width: 74%;
+
+}
+
+.photo1 {
+    margin-left: 156px;
+    margin-top: 66px;
+}
+
+.photo2 {
+    margin-top: 25px;
+    margin-left: 156px;
+}
+
+.photoGrid {
+    margin: 26px auto 0 156px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 27px;
+}
+
+.photoRight {
+    margin-right: 155px;
+}
+
+.amoreBack {
+    position: absolute;
+    display: grid;
+    grid-auto-flow: row;
+    z-index: -3;
+    margin-top: 198px;
+    grid-gap: 55px;
+}
+
+.date {
+    margin-top: 375px;
+}
+
+.price {
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.priceIn, .priceNot {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    color: #FFEFEF;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.exp {
+    display: grid;
+    grid-auto-flow: column;
+    margin-right: 20%;
+    margin-left: 21%;
+    grid-gap: 86px;
+    align-items: baseline;
+}
+
+.visae {
+    margin-left: 35px;
+}
+
+.priceExp {
+    text-align: center;
+}
+
+.expImgHouse {
+    height: 93px;
+}
+
+.expImgPizza {
+    height: 82px;
+}
+
+.expImgCar {
+    height: 68px;
+}
+
+.expTour {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFEFEF;
+}
+
+.priceNot {
+    margin-top: 65px;
+}
+
+.expImgFly {
+    height: 85px;
+}
+
+.expImgVisa {
+    height: 106px;
+}
+
+.expImgMed {
+    height: 71px;
+}
+
+.footer {
+    border: 1px solid #FFEFEF;
+    width: 99%;
+    margin-top: 198px;
+}
+
+.goder {
+    font-family: 'MADE SAONARA';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #FFEFEF;
+    text-align: center;
+    margin-bottom: 41px;
+}
+
+.arrow {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.arrowMain.overturn {
+    transform: rotate(180deg);
+}
+
+.listTours.open {
+    display: grid;
+}
+
+.mainList, .arrowMain {
+    line-height: 26px;
+    margin: 6px 0 0 75px;
+}
+
+.mainList, .listTour1, .listTour2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFEFEF;
+}
+
+
+.arrowMain {
+    margin-left: 22px;
+}
+
+.listTour1, .listTour2 {
+    text-decoration: none;
+    margin: 10px 0 0 35px;
+    line-height: 26px;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.listTour1 {
+    margin-bottom: 26px;
+}
+
+.footerGrid {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.icons {
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-flow: column;
+    margin: 74px auto 72px 300px;
+}
+
+.icons.open {
+    margin: 146px auto 72px 253px;
+}
+
+@media all and (max-width: 480px) {
+    body {
+        width: 100%;
+        max-width: 480px !important;
+    }
+
+    .header__nav {
+        width: 100%;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    header {
+        gap: 82%;
+        margin: 11% auto 0 8%;
+    }
+
+    .menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before {
+        width: 23px;
+    }
+
+    .ellipse {
+        width: 85%;
+        height: 5%;
+        left: 7%;
+        top: 3%;
+    }
+
+    .menu__item {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .header__menu {
+        grid-gap: 18px;
+        top: 3.5%;
+        left: 24%;
+    }
+
+
+    h1, h2 {
+        font-size: 36px;
+        line-height: 50px;
+        margin-top: 53px;
+    }
+
+
+    .chivitasGod2 {
+        display: block;
+        margin-top: 53px;
+        margin-left: 15%;
+        max-width: 71%;
+    }
+
+
+    .around {
+        width: 70%;
+        height: 174px;
+        margin: 11% auto 0 16%;
+    }
+
+    h3 {
+        margin-top: 35px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .authorGastro {
+        margin-top: 280px;
+    }
+
+    h2 {
+        line-height: 53px;
+        margin-top: 123px;
+    }
+
+    .aboutUs, .chivitasGod, .amore, .amore_2 {
+        display: none;
+    }
+
+    .aboutUs2, .amore480, .amore480_2 {
+        display: block;
+    }
+
+    .amore480 {
+        width: 99%;
+        margin-top: -70%;
+    }
+
+    .aboutUs2 {
+        border-top-left-radius: 45% 155px;
+        border-top-right-radius: 45% 155px;
+        margin-top: 50px;
+        width: 65%;
+        margin-left: 19%;
+    }
+
+    .textUs {
+        margin-top: 23px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .abz {
+        margin-top: 10px;
+    }
+
+    .days {
+        margin-top: 50px;
+        margin-left: 15%;
+    }
+
+    .day1, .day2, .day3, .day4, .day5 {
+        background-image: url(../img/Group\ 31.png);
+    }
+
+    .day1.color, .day2.color, .day3.color, .day4.color, .day5.color {
+        background-image: url(../img/Group\ 30.png);
+
+    }
+
+    .day1, .day1.color, .day2.color, .day2, .day3, .day4, .day5 {
+        padding: 20px;
+        width: 82%;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+
+
+    .arrowGodDiv {
+        margin: -525px auto 0 78%;
+        grid-gap: 104px;
+    }
+
+
+    .arrowGod1, .arrowGod2, .arrowGod3, .arrowGod4, .arrowGod5 {
+        height: 17px;
+    }
+
+    .day1Text.open, .day2Text.open, .day3Text.open, .day4Text.open, .day5Text.open {
+        font-size: 16px;
+        line-height: 26px;
+        width: 90%;
+    }
+
+    .arrowGod1.rotate, .arrowGod2.rotate {
+        margin-top: -734px;
+    }
+
+    .photo1, .photo2 {
+        width: 71%;
+        height: 50%;
+        margin-left: 15%;
+    }
+
+    .photo3, .photoRight {
+        height: 250px;
+    }
+
+    .photo3 {
+        width: 76%;
+    }
+
+    .photoRight {
+        width: 96%;
+        margin-left: -59px;
+        margin-right: 0px
+    }
+
+    .photoGrid {
+        margin-left: 15%;
+    }
+
+    .amore480_2 {
+        width: 100%;
+    }
+
+    .amoreBack {
+        margin-top: 125px;
+        grid-gap: 145px;
+    }
+
+    .date {
+        margin-top: 284px;
+    }
+
+    .price {
+        margin-top: 10px;
+    }
+
+    .priceIn, .priceNot {
+        font-size: 32px;
+        line-height: 43px;
+        margin-top: 60px;
+    }
+
+    .expImgHouse {
+        height: 68px;
+    }
+
+    .expImgPizza {
+        height: 60px;
+    }
+
+    .expImgCar {
+        height: 50px;
+    }
+
+    .exp {
+        text-align: center;
+        margin-right: 0;
+        margin-left: 0;
+        grid-gap: 0;
+        padding: 0% 10%;
+    }
+
+
+    .expTour {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .expImgFly {
+        height: 60px;
+    }
+
+    .expImgVisa {
+        height: 74px;
+    }
+
+    .visaRight {
+        margin-right: 18px;
+    }
+
+    .expImgMed {
+        height: 60px;
+    }
+
+    .footer {
+        margin-top: 128px;
+    }
+
+    .goder {
+        margin-top: 36px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .mainList {
+        font-size: 16px;
+        line-height: 26px;
+        width: 103px;
+    }
+
+    .mainList {
+        line-height: 26px;
+        margin: 5px 0 0 35px;
+    }
+
+    .arrowMain {
+        margin-left: -53px;
+        width: 12px;
+    }
+
+    .listTours.open {
+        width: 215px;
+    }
+
+    .listTour1, .listTour2 {
+        font-size: 12px;
+        line-height: 22px;
+        margin-left: -7px;
+    }
+
+    .icons {
+        grid-gap: 10%;
+        margin: 33% auto 72px 33%;
+    }
+
+    .icons.open {
+        margin: 179% auto 72px -5%;
+    }
+}
